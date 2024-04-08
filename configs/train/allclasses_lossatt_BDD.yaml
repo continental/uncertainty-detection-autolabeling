@@ -1,0 +1,12 @@
+---
+num_classes: 10
+image_size: '1024x512'
+moving_average_decay: 0
+mixed_precision: True
+map_freq: 20
+label_map: 'bdd'
+save_freq: 20
+loss_attenuation: True
+enable_softmax: True
+box_loss_weight: 100.0
+boxloss_type: "MSE"

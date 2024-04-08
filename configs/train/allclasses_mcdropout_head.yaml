@@ -1,0 +1,12 @@
+---
+num_classes: 7
+image_size: '1024x512'
+moving_average_decay: 0
+mixed_precision: True
+map_freq: 20
+label_map: 'kitti'
+save_freq: 20
+enable_softmax: True
+mc_dropout: True
+mc_classheadrate: 0.05
+mc_boxheadrate: 0.05

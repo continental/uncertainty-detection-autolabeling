@@ -1,0 +1,4 @@
+eval_samples: 10000
+hparams: /app/efficientdet_uncertainty/configs/train/allclasses_lossatt_BDD.yaml
+model_dir: /app/efficientdet_uncertainty/models/trained_models/---/
+val_file_pattern: /app/efficientdet_uncertainty/datasets/BDD100K/tf/_val100k.tfrecord

@@ -1,0 +1,11 @@
+---
+num_classes: 10
+image_size: '1024x512'
+moving_average_decay: 0
+mixed_precision: True
+map_freq: 20
+label_map: 'bdd'
+save_freq: 20
+enable_softmax: True
+mc_dropout: True
+mc_dropoutrate: 0.05
