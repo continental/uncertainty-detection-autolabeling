@@ -11,13 +11,13 @@ from matplotlib.patches import Rectangle
 import tensorflow as tf
 import seaborn as sns
 
-# TFPATH = '/app/efficientdet_uncertainty/datasets/CODA/tf/_val.tfrecord'
-# LABELPATH = '/app/efficientdet_uncertainty/datasets/CODA/coda_data.txt'
-# SAVEPATH = '/app/efficientdet_uncertainty/datasets/CODA'
-TFPATH = '/app/efficientdet_uncertainty/datasets/BDD100K/tf/_val100k.tfrecord'
-# TFPATH = '/app/efficientdet_uncertainty/datasets/BDD100K/tf/_train100k.tfrecord'
-LABELPATH = '/app/efficientdet_uncertainty/datasets/BDD100K/bdd.pbtxt'
-SAVEPATH = '/app/efficientdet_uncertainty/datasets/BDD100K'
+# TFPATH = '/app/datasets/CODA/tf/_val.tfrecord'
+# LABELPATH = '/app/datasets/CODA/coda_data.txt'
+# SAVEPATH = '/app/datasets/CODA'
+TFPATH = '/app/datasets/BDD100K/tf/_val100k.tfrecord'
+# TFPATH = '/app/datasets/BDD100K/tf/_train100k.tfrecord'
+LABELPATH = '/app/datasets/BDD100K/bdd.pbtxt'
+SAVEPATH = '/app/datasets/BDD100K'
 
 def plot_tf_image(image, boxes, labels):
     # Plot the image

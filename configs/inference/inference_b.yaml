@@ -1,9 +1,9 @@
 eval_samples: 10000
-hparams: /app/efficientdet_uncertainty/configs/train/allclasses_mcdropout_lossatt_BDD_head.yaml
+hparams: /app/configs/train/allclasses_mcdropout_lossatt_BDD_head.yaml
 infer_first_frame: 0
-infer_folder: /app/efficientdet_uncertainty/datasets/BDD100K/bdd100k/images/100k/val/
+infer_folder: /app/datasets/BDD100K/bdd100k/images/100k/val/
 infer_last_frame: 10
-model_dir: /app/efficientdet_uncertainty/models/trained_models/---
-saved_model_dir: /app/efficientdet_uncertainty/models/exported_models/---
-val_file_pattern: /app/efficientdet_uncertainty/datasets/BDD100K/tf/_val100k.tfrecord
-video_path: /app/efficientdet_uncertainty/datasets/videos/---.mp4
+model_dir: /app/models/trained_models/---
+saved_model_dir: /app/models/exported_models/---
+val_file_pattern: /app/datasets/BDD100K/tf/_val100k.tfrecord
+video_path: /app/datasets/videos/---.mp4

@@ -73,7 +73,7 @@ def generate_val_indices(data_dir, images, split = 0.2):
   """ Generate random indices for the val set and save to txt file """
   validation_set_size = int(len(os.listdir(data_dir+"/image_2/")) * split)  # Number of images to be used as a validation set.
   validation_set_indexes = random.sample(range(0, len(images)), validation_set_size)
-  with open('/app/efficientdet_uncertainty/datasets/KITTI/vaL_index_list.txt', 'w') as file:
+  with open('/app/datasets/KITTI/vaL_index_list.txt', 'w') as file:
       for index in validation_set_indexes:
           file.write(f"{index}\n")
 
@@ -297,12 +297,12 @@ def read_annotation_file(filename):
 
 
 if __name__ == "__main__":
-  data_dir = "/app/efficientdet_uncertainty/datasets/KITTI/training"
-  output_path = "/app/efficientdet_uncertainty/datasets/KITTI/tf/"  
+  data_dir = "/app/datasets/KITTI/training"
+  output_path = "/app/datasets/KITTI/tf/"
   classes_to_use = ["car","van","truck","pedestrian","person_sitting","cyclist","tram"] # Not capital
-  label_map_path = "/app/efficientdet_uncertainty/datasets/KITTI/kitti.pbtxt"  # Path to label map
+  label_map_path = "/app/datasets/KITTI/kitti.pbtxt"  # Path to label map
   val_indices = []
-  with open('/app/efficientdet_uncertainty/datasets/KITTI/vaL_index_list.txt', 'r') as file:
+  with open('/app/datasets/KITTI/vaL_index_list.txt', 'r') as file:
       for line in file:
           val_indices.append(int(line.strip()))
   print("Validation set size:", len(val_indices))

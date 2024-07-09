@@ -1,12 +1,12 @@
-model_dir: "/app/efficientdet_uncertainty/models/trained_models/---"
-saved_model_dir: '/app/efficientdet_uncertainty/models/exported_models/---' 
-infer_folder: "/app/efficientdet_uncertainty/datasets/CODA/images/"
+model_dir: "/app/models/trained_models/---"
+saved_model_dir: '/app/models/exported_models/---'
+infer_folder: "/app/datasets/CODA/images/"
 
 infer_first_frame: 0
 infer_last_frame: 100
 
-val_file_pattern: "/app/efficientdet_uncertainty/datasets/CODA/tf/_val.tfrecord"
+val_file_pattern: "/app/datasets/CODA/tf/_val.tfrecord"
 eval_samples: 4494
-hparams: "/app/efficientdet_uncertainty/configs/train/allclasses_lossatt_BDD.yaml"
+hparams: "/app/configs/train/allclasses_lossatt_BDD.yaml"
 
-video_path: "/app/efficientdet_uncertainty/datasets/videos/---.mp4" 
+video_path: "/app/datasets/videos/---.mp4"

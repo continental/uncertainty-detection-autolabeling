@@ -1,9 +1,9 @@
 eval_samples: 1496
-hparams: /app/efficientdet_uncertainty/configs/train/allclasses_mcdropout_lossatt_head.yaml
+hparams: /app/configs/train/allclasses_mcdropout_lossatt_head.yaml
 infer_first_frame: 0
-infer_folder: /app/efficientdet_uncertainty/datasets/KITTI/testing/image_2/
+infer_folder: /app/datasets/KITTI/testing/image_2/
 infer_last_frame: 100
-model_dir: /app/efficientdet_uncertainty/models/trained_models/---
-saved_model_dir: /app/efficientdet_uncertainty/models/exported_models/---
-val_file_pattern: /app/efficientdet_uncertainty/datasets/KITTI/tf/_val.tfrecord
-video_path: /app/efficientdet_uncertainty/datasets/videos/---.mp4
+model_dir: /app/models/trained_models/---
+saved_model_dir: /app/models/exported_models/---
+val_file_pattern: /app/datasets/KITTI/tf/_val.tfrecord
+video_path: /app/datasets/videos/---.mp4

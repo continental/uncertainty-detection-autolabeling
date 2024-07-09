@@ -18,3 +18,4 @@ hebo
 optuna
 jupyterlab
 torch==1.12.1
+Pillow==9.5.0

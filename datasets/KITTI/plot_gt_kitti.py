@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 from skimage import io
 from matplotlib.patches import Rectangle
 
-IMGPATH = '/app/efficientdet_uncertainty/datasets/KITTI/training/image_2/000004.png'
+IMGPATH = '/app/datasets/KITTI/training/image_2/000004.png'
 colors = sns.color_palette('Paired', 9 * 2)
 categories = ['Car', 'Van', 'Truck', 'Pedestrian', 'Person_sitting', 'Cyclist', 'Tram', 'Misc', 'DontCare']
 
@@ -36,5 +36,5 @@ for line in labels:
               bbox=dict(facecolor=colors[categories.index(label)], alpha=0.5),
               fontsize=7, color='k')
 plt.tight_layout()
-plt.savefig("/app/efficientdet_uncertainty/datasets/KITTI/gt_test.png")
+plt.savefig("/app/datasets/KITTI/gt_test.png")
 plt.close()

@@ -1,4 +1,4 @@
 eval_samples: 1496
-hparams: /app/efficientdet_uncertainty/configs/train/allclasses_lossatt.yaml
-model_dir: /app/efficientdet_uncertainty/models/trained_models/---/
-val_file_pattern: /app/efficientdet_uncertainty/datasets/KITTI/tf/_val.tfrecord
+hparams: /app/configs/train/allclasses_lossatt.yaml
+model_dir: /app/models/trained_models/---/
+val_file_pattern: /app/datasets/KITTI/tf/_val.tfrecord

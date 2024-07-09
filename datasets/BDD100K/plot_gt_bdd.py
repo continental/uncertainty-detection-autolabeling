@@ -18,9 +18,9 @@ from matplotlib.patches import Rectangle
 from object_detection.utils import label_map_util
 
 
-data_dir = "/app/efficientdet_uncertainty/datasets/BDD100K/bdd100k"
+data_dir = "/app/datasets/BDD100K/bdd100k"
 classes_to_use =  ["pedestrian","rider","car","truck","bus","train","motorcycle","bicycle","traffic light","traffic sign"] 
-label_map_path = "/app/efficientdet_uncertainty/datasets/BDD100K/bdd.pbtxt"
+label_map_path = "/app/datasets/BDD100K/bdd.pbtxt"
 img_indx = 0
     
 label_map_dict = label_map_util.get_label_map_dict(label_map_path)
@@ -74,5 +74,5 @@ with open(json_path, 'rb') as json_f:
 
 
         plt.tight_layout()
-        plt.savefig("/app/efficientdet_uncertainty/datasets/BDD100K/gt_test.png")
+        plt.savefig("/app/datasets/BDD100K/gt_test.png")
         plt.close()

@@ -29,11 +29,12 @@ This repository provides an implementation of the following papers. It uses as a
 
 <img src="misc/paper1.jpg" width="800">
 
-[![Paper](http://img.shields.io/badge/Paper-arXiv.0000.00000-B3181B?logo=arXiv)]() Link incoming, Cost-Sensitive Uncertainty-Based Failure Recognition for Object Detection
+[![Paper](http://img.shields.io/badge/Paper-arXiv.2404.17427-B3181B?logo=arXiv)](https://arxiv.org/pdf/2404.17427) Cost-Sensitive Uncertainty-Based Failure Recognition for Object Detection
 
 <img src="misc/paper2.jpg" width="800">
 
-[![Paper](http://img.shields.io/badge/Paper-arXiv.0000.00000-B3181B?logo=arXiv)]() Link incoming, Reliable Active Learning: Aligning Training and Evaluation through the Concept of Similarity 
+[![Paper](http://img.shields.io/badge/Paper-arXiv.0000.00000-B3181B?logo=arXiv)]() Link incoming, Overcoming Common Challenges in Active Learning Pipelines for Object
+Detection via Similarity
 
 <img src="misc/paper3.jpg" width="800">
 
@@ -46,7 +47,7 @@ This repository provides an implementation of the following papers. It uses as a
    ```
 
 2. Download via `wget` the [`EfficientDet-d0 Pre-trained Model`](https://storage.googleapis.com/cloud-tpu-checkpoints/efficientdet/coco/efficientdet-d0.tgz) and extract into the `src/` directory.
-
+4. Download the datasets you would like to use into the `datasets/` directory.
 Then, either manually install the libraries in `requirements.txt` or:
 2. Build a Docker image with the Dockerfile in the main directory. If applicable, adjust the file.
 3. Run the Docker container.
@@ -84,7 +85,7 @@ Training the model can be achieved via two approaches.
 - `train_file_pattern`: Path to training TFRecord.
 - `val_file_pattern`: Path to validation TFRecord.
 - `model_name`: EfficientDet model name (e.g., `efficientdet-d0`, `d1`, `d2`, ...).
-- `model_dir`: Model saving directory: `/app/efficientdet_uncertainty/models/trained_models/model_name`.
+- `model_dir`: Model saving directory: `/app/models/trained_models/model_name`.
 - `eval_samples`: Number of images in the validation set.
 - `num_examples_per_epoch`: Number of images in the training set.
 - `pretrained_ckpt`: Pre-trained model, e.g., `efficientdet-d0`.
@@ -167,6 +168,8 @@ The automatic uncertainty quality analysis that is run after the prediction on t
 
 ## Thresholding
 `uncertainty_analysis.py` in `/src` includes the cost-sensitive automatic thresholding approach. It requires the model name as input, which will be added to the path of its `validate_results.txt` file, upon which the analysis is carried out. 
+
+The model name should contain the dataset name in order to import the corresponding attributes.
 ```python
 python -m uncertainty_analysis.py
 ```
@@ -277,7 +280,13 @@ Citations
    pages={52–68}}
 ```
 ```
-@inbook{}
+@inproceedings{
+   sbeyti2024costsensitive,
+   title={Cost-Sensitive Uncertainty-Based Failure Recognition for Object Detection},
+   author={Moussa Kassem~Sbeyti and Michelle E. Karg and Christian Wirth and Nadja Klein and Sahin Albayrak},
+   booktitle={The 40th Conference on Uncertainty in Artificial Intelligence},
+   year={2024}
+}
 ```
 ```
 @inbook{}

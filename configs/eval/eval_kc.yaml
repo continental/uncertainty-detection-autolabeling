@@ -1,4 +1,4 @@
 eval_samples: 4502
-hparams: /app/efficientdet_uncertainty/configs/train/allclasses_mcdropout_lossatt_head.yaml
-model_dir: /app/efficientdet_uncertainty/models/trained_models/---/
-val_file_pattern: /app/efficientdet_uncertainty/datasets/CODA/tf/_val.tfrecord
+hparams: /app/configs/train/allclasses_mcdropout_lossatt_head.yaml
+model_dir: /app/models/trained_models/---/
+val_file_pattern: /app/datasets/CODA/tf/_val.tfrecord

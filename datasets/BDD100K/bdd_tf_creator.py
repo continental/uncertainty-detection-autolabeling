@@ -268,11 +268,11 @@ def convert_bdd_to_tfrecords(data_dir, output_path, classes_to_use, label_map_pa
 
 
 if __name__ == "__main__":
-    data_dir = "/app/efficientdet_uncertainty/datasets/BDD100K/bdd100k/"
+    data_dir = "/app/datasets/BDD100K/bdd100k/"
     # collect_bdd_images(data_dir)
-    output_path = "/app/efficientdet_uncertainty/datasets/BDD100K/tf/"
+    output_path = "/app/datasets/BDD100K/tf/"
     classes_to_use = ["pedestrian", "rider", "car", "truck", "bus", "train", "motorcycle", "bicycle", "traffic light",
                       "traffic sign"]  # Not capital letters
-    label_map_path = "/app/efficientdet_uncertainty/datasets/BDD100K/bdd.pbtxt"
+    label_map_path = "/app/datasets/BDD100K/bdd.pbtxt"
     convert_bdd_to_tfrecords(data_dir, output_path, classes_to_use, label_map_path, train=True)
     convert_bdd_to_tfrecords(data_dir, output_path, classes_to_use, label_map_path, train=False)
