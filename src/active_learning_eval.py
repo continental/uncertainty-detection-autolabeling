@@ -2,8 +2,7 @@
 # Licensed under the BSD-3-Clause License.
 # @author: Moussa Kassem Sbeyti
 # ==============================================================================
-""" Specific for paper: Enhancing Active Learning for Object Detection through Similarity
-Active learning main evaluation """
+""" Specific for paper: Overcoming Common Challenges in Active Learning Pipelines for Object Detection via Similarity """
 
 import json
 import os

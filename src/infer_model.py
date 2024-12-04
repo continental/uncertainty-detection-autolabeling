@@ -32,6 +32,7 @@ class InferImages:
         model_params,
         model_name,
         mode="inference",
+        added_name="",
         general_path=os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
     ):
         """Constructs all the necessary attributes for the inference
@@ -42,10 +43,11 @@ class InferImages:
             model_params (dict): Model parameters
             model_name (str): Path containing model name
             mode (string): Activates the difference inference modes such as Auto-Labeling or SSAL
+            added_name (string): Additional name for the SSAL mode for saving the results
             general_path (str): Path to working space
         """
         self.ssl_score = True if "SSL" in infer_data["saved_model_dir"] else False
-        self.consistency_ssl = False
+        self.consistency_ssl = model_params["consistency_ssl"]
         self.general_path = general_path
         self.saving_path = general_path + "/results/inference/"
         self.model_name = model_name.split("/")[-1]
@@ -123,7 +125,10 @@ class InferImages:
                     + "/results/validation/"
                     + self.model_name
                 ):
-                    MainUncertViz(self.model_name)  # , calib=False
+                    if "calib" in activate_calib:
+                        MainUncertViz(self.model_name)
+                    else:
+                        MainUncertViz(self.model_name, calib=False)
                     with open(
                         opt_params_path
                         + "/optimal_params_"
@@ -181,7 +186,9 @@ class InferImages:
         elif mode == "SSAL":
             self.ssal = True
             self.infer = False
-            self.save_dir = self.saving_path + "/SSAL/" + self.model_name
+            if added_name != "":
+                added_name += "_"
+            self.save_dir = self.saving_path + "/SSAL/" + added_name + self.model_name
             if os.path.exists(self.save_dir):
                 shutil.rmtree(self.save_dir)
         else:
@@ -801,17 +808,26 @@ class InferImages:
                     ious = np.asarray(
                         [calc_iou_np([b], boxes_aug[0]) for b in boxes[0]]
                     )
+                    # from matplotlib import pyplot as plt
+                    # plt.figure(figsize=(20,20))
+                    # plt.imshow(aug_im[0])
+                    # plt.savefig("augmented_image.png")
+                    # plt.close()
                     return np.max(ious, axis=-1), classes_aug
 
-                ious_aug, cls_aug = np.mean(
-                    [
-                        ious_post_augment("flip"),
-                        ious_post_augment("blur"),
-                        ious_post_augment("noise"),
-                    ],
-                    axis=0,
+                flip_iou, cls_flip = ious_post_augment("flip")
+                blur_iou, cls_blur = ious_post_augment("blur")
+                noise_iou, cls_noise = ious_post_augment("noise")
+
+                ious_aug = np.mean(
+                    np.stack([flip_iou, blur_iou, noise_iou], axis=-1), axis=-1
                 )
-                class_common = [num.is_integer() for num in cls_aug[0]]
+                class_common = [
+                    num.is_integer()
+                    for num in np.mean(
+                        np.stack([cls_flip, cls_blur, cls_noise], axis=-1)[0], axis=-1
+                    )
+                ]
             filtered_max_albox = []
             filtered_max_mcbox = []
             filtered_mcclass = []

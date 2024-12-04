@@ -17,6 +17,9 @@
    - [Auto-Labeling](#auto-labeling)
 - Active Learning Experiments:
    - [Active Learning](#active-learning)
+- Semi-Supervised Learning Experiments:
+   - [Semi-Supervised Learning](#semi-supervised-learning)
+
 
 - [Citations](#Citations)
 - [Additional Information](#additional-information)
@@ -33,24 +36,30 @@ This repository provides an implementation of the following papers. It uses as a
 
 <img src="misc/paper2.jpg" width="800">
 
-[![Paper](http://img.shields.io/badge/Paper-arXiv.0000.00000-B3181B?logo=arXiv)]() Link incoming, Overcoming Common Challenges in Active Learning Pipelines for Object
-Detection via Similarity
+[![Paper](http://img.shields.io/badge/Paper-arXiv.0000.00000-B3181B?logo=arXiv)]() Link incoming, Overcoming Common Challenges in Active Learning Pipelines for Object Detection through Similarity 
 
 <img src="misc/paper3.jpg" width="800">
 
+[![Paper](http://img.shields.io/badge/Paper-arXiv.0000.00000-B3181B?logo=arXiv)]() Link incoming, Addressing the Limitations of Semi-Supervised Object Detection through Enhanced Label Refinement and Utilization 
+
+<img src="misc/paper4.jpg" width="800">
+
 ## Prerequisites
-1. Clone this repository:
+1. Clone this repository, then:
 
    ```bash
-   git clone https://github.geo.conti.de/uie79970/EffiencientDet_Uncertainty.git
-   cd Uncertainty_AutoLabeling
+   cd uncertainty-detection-autolabeling
    ```
 
-2. Download via `wget` the [`EfficientDet-d0 Pre-trained Model`](https://storage.googleapis.com/cloud-tpu-checkpoints/efficientdet/coco/efficientdet-d0.tgz) and extract into the `src/` directory.
-4. Download the datasets you would like to use into the `datasets/` directory.
+2. Download via `wget` the [`EfficientDet-d0 Pre-trained Model`](https://storage.googleapis.com/cloud-tpu-checkpoints/efficientdet/coco/efficientdet-d0.tar.gz) and extract into the `src/` directory.
+
+3. If not available, download the dataset you would like to use into the `datasets/` directory.
+
 Then, either manually install the libraries in `requirements.txt` or:
-2. Build a Docker image with the Dockerfile in the main directory. If applicable, adjust the file.
-3. Run the Docker container.
+
+4. Build a Docker image with the Dockerfile in the main directory. If applicable, adjust the file.
+
+5. Run the Docker container.
 
 ## Notes
 Multiple files allow the selection of which GPUs to run on, in case a selection is necessary.
@@ -263,6 +272,37 @@ Possible options:
 
 Both AL files allow the selection of a different reference path to their location in case of specific remote implementations.
 
+## Semi-Supervised Learning
+This repository contains implementations of Semi-Supervised Learning (SSL) approaches for object detection, including pseudo-labels- and consistency-based methods.
+
+The main focus is on pseudo-labels, which includes a simple student-teacher approach inspired by Sohn, Kihyuk, et al. "A simple semi-supervised learning framework for object detection." arXiv preprint arXiv:2005.04757 (2020). You can run our STAC implementation via:
+```bash
+python -m SSL_stac.py
+```
+The process consists of training, predicting, selecting, and re-training with pseudo-labels. Each batch consists of both ground truth and pseudo-labels.
+
+The argument `selection_strategy` allows the usage of either the prediction score as per STAC or uncertainty-based approaches such as `all_uncert`, `combo`, `epuncert`, `ental`, and any other score function available in the prediction file `prediction_data.txt` in the results folder. The `selection_strategy` should include the term `pseudoscore` in addition to any added term if the pseudo-labels are to be weighted during training. For the latter, weights need to be generated via the function `_weight_generator` in `src/ssl_utils/parent.py`.
+
+To continuously predict and retrain, include `selftrain` in the `selection_strategy`.
+
+The argument `teacher_strategy` allows the use of one of our proposed enhancements to SSL which can be found in `src/ssl_utils` under `rcc.py` and `rcf.py`.
+
+All the following scripts in `src/ssl_utils` depend on `parent.py`:
+- **rcc.py**: Extracts crops of targeted classes and generates collages that can be used in addition to the labeled data. Include the term `rcc` in the `teacher_strategy`.
+- **rcf.py**: Splits the labeled data into rare and common examples based on the class distribution in each image, ensuring the existence of rare classes in each batch. Include the term `curriculum_learning` with or without `aug`. To weight each image with a score, include the term `imscore`. For the latter, weights also need to be generated.
+
+- **glc.py**: Cleans the ground-truth with the help of model predictions.
+- **pls.py**: Sorts pseudo-labeled images based on our proposed score which correlates with missing detections.
+- **3d.py**: Analyzes the effect of noise, missing detections, and false detections in pseudo-labels on training.
+
+
+We also include an adaptation of Jeong, Jisoo, et al. "Consistency-based semi-supervised learning for object detection." Advances in neural information processing systems 32 (2019). To run CSD, use the following script: 
+   ```python
+   python -m SSL_csd.py
+   ```
+The argument `ratio` controls the ratio of labeled to unlabeled in each batch.
+
+Both STAC and CSD use `train_flags_SSL.py` to run the student trainings with different arguments for each. Meanwhile the teacher is trained via the standard script `train_flags.py`.  
 
 Citations
 --------
@@ -287,6 +327,9 @@ Citations
    booktitle={The 40th Conference on Uncertainty in Artificial Intelligence},
    year={2024}
 }
+```
+```
+@inbook{}
 ```
 ```
 @inbook{}

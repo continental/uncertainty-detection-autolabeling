@@ -194,14 +194,12 @@ class UncertOptimal:
             self.opt_params = optimizer.X.iloc[opt_iter]
         else:
             study = optuna.create_study(direction="minimize")
-            # Set the initial minimum value and the counter for unchanged minimum
             min_value = float("inf")
             unchanged_count = 0
             max_unchanged_epochs = (
                 300  # Set the desired number of epochs for convergence
             )
-            for epoch in range(1, 1500):  # Assuming you want to run for 300 epochs
-                # Optimize a trial
+            for epoch in range(1, 1500):
                 trial = study.ask()
                 suggested_params = [
                     trial.suggest_float(f"param_{i}", 0, 1)
@@ -429,7 +427,7 @@ class MainUncertViz:
                 for j in range(len(self.selected_uncerts)):
                     collected_uncert[j][self.pred_classes == i + 1] *= perc_opt_params[
                         n_iter
-                    ]  # Pred or GT for Eval? Assuming perfect classification
+                    ]
                     n_iter += 1
             self.opt_uncert = np.sum(collected_uncert, axis=0)
             self._save_thr_performance(added_name="_clsoptpred")
@@ -492,7 +490,7 @@ class MainUncertViz:
                 for j in range(len(self.selected_uncerts)):
                     collected_uncert[j][self.gt_classes == i + 1] *= perc_opt_params[
                         n_iter
-                    ]  # Pred or GT for Eval? Assuming perfect classification
+                    ]
                     n_iter += 1
             fixed_opt_uncert = np.sum(collected_uncert, axis=0)
             self._save_thr_performance(
@@ -592,9 +590,7 @@ class MainUncertViz:
                         )
                     else:
                         for j in range(len(selected_uncert_class)):
-                            selected_uncert_class[j] *= opt_params[
-                                n_iter
-                            ]  # Pred or GT for Eval? Assuming perfect classification
+                            selected_uncert_class[j] *= opt_params[n_iter]
                             n_iter += 1
                         opt_uncert_class = np.sum(selected_uncert_class, axis=0)
 

@@ -21,17 +21,16 @@
 import functools
 import re
 
-from absl import logging
+import fpn_configs
+import hparams_config
 import numpy as np
 import tensorflow.compat.v1 as tf
-
-import hparams_config
 import utils
-from backbone import backbone_factory
-from backbone import efficientnet_builder
-import fpn_configs
+from absl import logging
+from backbone import backbone_factory, efficientnet_builder
 
 
+################################################################################
 def freeze_vars(variables, pattern):
   """Removes backbone+fpn variables from the input.
 

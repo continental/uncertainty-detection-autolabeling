@@ -4,240 +4,237 @@ Distribution: OPENSOURCE
 
 Components:
 
-about-time 4.2.1 : MIT License
-absl-py 2.1.0 : Apache License 2.0
-albumentations 1.3.1 : MIT License
-alembic 1.13.1 : MIT License
-alive-progress 3.1.5 : MIT License
-anyio 4.3.0 : MIT License
-argon2-cffi 23.1.0 : MIT License
-argon2-cffi-bindings 21.2.0 : MIT License
-ASN.1 library for Python 0.5.1 : BSD 2-clause "Simplified" License
-asttokens 2.4.1 : Apache License 2.0
-astunparse 1.6.3 : BSD 3-clause "New" or "Revised" License
-async-lru 2.0.4 : MIT License
-autograd 1.6.2 : MIT License
-BeautifulSoup4 4.12.3 : MIT License
-brisque 0.0.15 : MIT License
-cachetools 5.3.3 : MIT License
-catboost 1.2.3 : Apache License 2.0
-client_python 0.20.0 : Apache License 2.0
-cloudpickle 3.0.0 : BSD 3-clause "New" or "Revised" License
-cma 3.2.2 : BSD 3-clause "New" or "Revised" License
-cocodataset/cocoapi 1.0.0 : BSD 3-clause "New" or "Revised" License
-colorama 0.4.6 : BSD 3-clause "New" or "Revised" License
-comm 0.2.2 : BSD 3-clause "New" or "Revised" License
-contextlib2 21.6.0 : Python Software Foundation License 2.0
-contourpy 1.2.0 : BSD 3-clause "New" or "Revised" License
-Cycler 0.12.1 : BSD 3-clause "New" or "Revised" License
-Cython 3.0.9 : Apache License 2.0
-debugpy 1.8.1 : MIT License
-defusedxml v0.7.1 : Python Software Foundation License 2.0
-Deprecated 1.2.14 : MIT License
-dm-tree 0.1.8 : Apache License 2.0
-Docutils 0.20.1 : Public Domain
-exceptiongroup 1.2.0 : MIT License
-executing 2.0.1 : MIT License
-fastjsonschema 2.19.1 : BSD 3-clause "New" or "Revised" License
-FlatBuffers 24.3.7 : Apache License 2.0
-fonttools 4.5.0 : MIT License
-fsspec 2024.2.0 : BSD 3-clause "New" or "Revised" License
+BeautifulSoup4 4.12.3: https://github.com/il-vladislav/BeautifulSoup4 : MIT License
+Cycler 0.12.1: https://github.com/matplotlib/Cycler : BSD 3-clause "New" or "Revised" License
+Cython 3.0.9: http://cython.org/ : Apache License 2.0
+Deprecated 1.2.14: https://github.com/tantale/deprecated : MIT License
+Docutils 0.20.1: http://docutils.sourceforge.net/ : Public Domain
+FlatBuffers 24.3.7: http://google.github.io/flatbuffers/ : Apache License 2.0
+GPy 1.13.1: https://github.com/SheffieldML/GPy : BSD 3-clause "New" or "Revised" License
+HEBO 0.3.5: https://github.com/Yard1/noah-research/tree/master/HEBO : MIT License
+IPython 8.18.1: http://ipython.org/ : BSD 3-clause "New" or "Revised" License
+ImageHash 4.3.1: https://github.com/JohannesBuchner/imagehash : BSD 2-clause "Simplified" License
+Jinja 3.1.3: http://jinja.pocoo.org/ : BSD 3-clause "New" or "Revised" License
+Keras-Preprocessing 1.1.2: https://github.com/keras-team/keras-preprocessing : MIT License
+MXNet 0.11.0.rc0: http://mxnet.io : Apache License 2.0
+Mako 1.3.2: http://www.makotemplates.org/ : MIT License
+Markdown 3.1: http://pypi.debian.net/Markdown/Markdown-2.6.11.tar.gz : BSD 3-clause "New" or "Revised" License
+MarkupSafe 2.1.5: https://www.palletsprojects.com/p/markupsafe/ : BSD 3-clause "New" or "Revised" License
+Mistune 3.0.2: http://mistune.readthedocs.org/ : BSD 3-clause "New" or "Revised" License
+NetworkX 3.2.1: https://networkx.github.io/ : BSD 3-clause "New" or "Revised" License
+NumPy 1.23.5: https://numpy.org/ : BSD 3-clause "New" or "Revised" License
+Packaging 24.0: https://github.com/pypa/packaging : Apache License 2.0
+PyTZ - Python Time Zone Library 2024.1: http://pythonhosted.org/pytz/ : MIT License
+PyWavelets 1.5.0: https://github.com/PyWavelets/pywt : MIT License
+PyYAML 6.0.1: https://pyyaml.org/ : MIT License
+Pygments - Python syntax highlighter 2.17.2: http://pygments.org/ : BSD 2-clause "Simplified" License
+Pyparsing 3.1.2: https://github.com/pyparsing/pyparsing/ : MIT License
+Python Keyring Lib 24.3.1: http://bitbucket.org/kang/python-keyring-lib/ : MIT License
+Python six 1.16.0: http://pypi.python.org/pypi/six : MIT License
+Python tzdata 2024.1: https://github.com/python/tzdata : Apache License 2.0
+Python-Babel 2.14.0: http://babel.pocoo.org/ : BSD 3-clause "New" or "Revised" License
+Python-RSA 4.9: https://stuvel.eu/rsa : Apache License 2.0
+QtPy 2.4.1: https://github.com/goanpeca/QtPy : MIT License
+SQLAlchemy 2.0.28: http://www.sqlalchemy.org/ : MIT License
+SciPy 1.11.4: http://www.scipy.org : BSD 3-clause "New" or "Revised" License
+SymPy 1.12: http://sympy.org : BSD 3-clause "New" or "Revised" License
+TensorFlow 0.0.1: http://tensorflow.org : MIT License
+TensorFlow 2.10.0: http://tensorflow.org : Apache License 2.0
+Traitlets 5.14.2: https://traitlets.readthedocs.io/ : BSD 3-clause "New" or "Revised" License
+Werkzeug 3.0.1: http://werkzeug.pocoo.org/ : BSD 3-clause "New" or "Revised" License
+about-time 4.2.1: https://github.com/rsalmei/about-time : MIT License
+absl-py 2.1.0: https://github.com/abseil/abseil-py : Apache License 2.0
+albumentations 1.3.1: https://github.com/albu/albumentations : MIT License
+alembic 1.13.1: http://alembic.readthedocs.org/ : MIT License
+alive-progress 3.1.5: https://github.com/rsalmei/alive-progress : MIT License
+anyio 4.3.0: https://pypi.org/project/anyio/ : MIT License
+argon2-cffi-bindings 21.2.0: https://github.com/hynek/argon2-cffi-bindings : MIT License
+argon2-cffi 23.1.0: https://argon2-cffi.readthedocs.io/ : MIT License
+asttokens 2.4.1: https://pypi.org/project/asttokens/ : Apache License 2.0
+astunparse 1.6.3: https://github.com/simonpercivall/astunparse : BSD 3-clause "New" or "Revised" License
+async-lru 2.0.4: https://github.com/aio-libs/async_lru : MIT License
+autograd 1.6.2: https://github.com/HIPS/autograd : MIT License
+brisque 0.0.15: https://github.com/rehanguha/brisque : MIT License
+cachetools 5.3.3: https://pypi.python.org/pypi/cachetools : MIT License
+catboost 1.2.3: http://github.com/catboost : Apache License 2.0
+client_python 0.20.0: https://github.com/prometheus/client_python : Apache License 2.0
+cloudpickle 3.0.0: https://github.com/cloudpipe/cloudpickle : BSD 3-clause "New" or "Revised" License
+cma 3.2.2: https://www.lri.fr/~hansen/cmaes_inmatlab.html#python : BSD 3-clause "New" or "Revised" License
+colorama 0.4.6: https://github.com/tartley/colorama : BSD 3-clause "New" or "Revised" License
+comm 0.2.2: https://pypi.org/project/comm/ : BSD 3-clause "New" or "Revised" License
+contextlib2 21.6.0: http://contextlib2.readthedocs.org/ : Python Software Foundation License 2.0
+contourpy 1.2.0: https://github.com/contourpy/contourpy : BSD 3-clause "New" or "Revised" License
+debugpy 1.8.1: https://aka.ms/ptvs : MIT License
+defusedxml v0.7.1: https://github.com/tiran/defusedxml : Python Software Foundation License 2.0
+dm-tree 0.1.8: https://github.com/deepmind/tree : Apache License 2.0
+exceptiongroup 1.2.0: https://github.com/python-trio/exceptiongroup : MIT License
+executing 2.0.1: https://github.com/alexmojaki/executing : MIT License
+fastjsonschema 2.19.1: https://github.com/seznam/python-fastjsonschema : BSD 3-clause "New" or "Revised" License
+fonttools 4.5.0: https://github.com/behdad/fonttools/ : MIT License
+fsspec 2024.2.0: http://github.com/martindurant/filesystem_spec : BSD 3-clause "New" or "Revised" License
 gast 0.4.0 : BSD 3-clause "New" or "Revised" License
-google-auth-oauthlib 0.4.6 : Apache License 2.0
-google-pasta 0.2.0 : Apache License 2.0
+google-auth-oauthlib 0.4.6: https://github.com/GoogleCloudPlatform/google-auth-library-python : Apache License 2.0
+google-pasta 0.2.0: https://github.com/google/pasta : Apache License 2.0
 google/automl 1.0 : Apache License 2.0
-google/jaxtyping 0.2.28 : MIT License
-GPy 1.13.1 : BSD 3-clause "New" or "Revised" License
-gpytorch 1.11 : MIT License
-grapheme 0.6.0 : MIT License
-greenlet 3.0.3 : MIT License
+google/automl 1.1 : Apache License 2.0
+google/jaxtyping 0.2.28: https://github.com/google/jaxtyping : MIT License
+gpytorch 1.11: https://gpytorch.ai : MIT License
+grapheme 0.6.0: https://github.com/alvinlindstam/grapheme : MIT License
+greenlet 3.0.3: http://pypi.python.org/pypi/greenlet : MIT License
 grpcio 1.62.1 : Apache License 2.0
-h11 0.14.0 : MIT License
-h5py 3.10.0 : BSD 3-clause "New" or "Revised" License
-HEBO 0.3.5 : MIT License
-httpcore 1.0.4 : BSD 3-clause "New" or "Revised" License
-httpx 0.27.0 : BSD 3-clause "New" or "Revised" License
-idna 3.6 : BSD 3-clause "New" or "Revised" License
-ijson 3.2.3 : BSD 3-clause "New" or "Revised" License
-ImageHash 4.3.1 : BSD 2-clause "Simplified" License
-imageio 2.34.0 : BSD 2-clause "Simplified" License
-importlib-resources 6.3.0 : Apache License 2.0
-ipykernel 6.29.3 : BSD 3-clause "New" or "Revised" License
-IPython 8.18.1 : BSD 3-clause "New" or "Revised" License
-ipywidgets 8.1.2 : BSD 3-clause "New" or "Revised" License
-jaraco/jaraco.classes 3.3.1 : MIT License
-jedi 0.19.1 : MIT License
-Jinja 3.1.3 : BSD 3-clause "New" or "Revised" License
-joblib 1.3.2 : BSD 3-clause "New" or "Revised" License
-jsocol's bleach 6.1.0 : Apache License 2.0
-jsonschema-specifications 2023.12.1 : MIT License
-jupyter 1.0.0 : BSD 3-clause "New" or "Revised" License
-jupyter-console 6.6.3 : BSD 3-clause "New" or "Revised" License
-jupyter-events 0.9.1 : BSD 3-clause "New" or "Revised" License
-jupyter-lsp 2.2.4 : BSD 3-clause "New" or "Revised" License
-jupyter-server-terminals 0.5.3 : BSD 3-clause "New" or "Revised" License
-jupyter-server/jupyter_server 2.13.0 : BSD 3-clause "New" or "Revised" License
-jupyter_client 8.6.1 : BSD 3-clause "New" or "Revised" License
-jupyter_core 5.7.2 : BSD 3-clause "New" or "Revised" License
-jupyterlab 4.1.5 : ((BSD Zero Clause License AND MIT License AND BSD 2-clause "Simplified" License AND ISC License AND Apache License 2.0 AND BSD 3-clause "New" or "Revised" License AND The Unlicense AND Eclipse Public License 2.0) AND ((MIT License AND SIL Open Font License 1.1 AND Creative Commons Attribution 4.0) AND (Apache License 2.0 OR Mozilla Public License 2.0)))
-jupyterlab-pygments 0.3.0 : BSD 3-clause "New" or "Revised" License
-jupyterlab-server 2.25.4 : BSD 3-clause "New" or "Revised" License
-jupyterlab-widgets 3.0.10 : BSD 3-clause "New" or "Revised" License
-Keras-Preprocessing 1.1.2 : MIT License
-keras-team/keras 2.10.0 : Apache License 2.0
-lazy_loader 0.3 : BSD 3-clause "New" or "Revised" License
-libclang 16.0.6 : Apache License 2.0
-libsvm 3.23.0.4 : Apache License 2.0
-lightgbm 4.3.0 : (MIT License OR Unknown License)
+h11 0.14.0: https://github.com/njsmith/h11 : MIT License
+h5py 3.10.0: http://www.h5py.org : BSD 3-clause "New" or "Revised" License
+httpcore 1.0.4: https://github.com/encode/httpcore : BSD 3-clause "New" or "Revised" License
+httpx 0.27.0: https://www.python-httpx.org/ : BSD 3-clause "New" or "Revised" License
+idan/oauthlib 3.2.2: https://github.com/idan/oauthlib : BSD 3-clause "New" or "Revised" License
+idna 3.6: https://github.com/kjd/idna : BSD 3-clause "New" or "Revised" License
+ijson 3.2.3: http://pypi.python.org/pypi/ijson/ : BSD 3-clause "New" or "Revised" License
+imageio 2.34.0: http://imageio.github.io/ : BSD 2-clause "Simplified" License
+importlib-resources 6.3.0: http://importlib-resources.readthedocs.io/ : Apache License 2.0
+ipykernel 6.29.3: http://ipython.org : BSD 3-clause "New" or "Revised" License
+ipywidgets 8.1.2: http://ipython.org : BSD 3-clause "New" or "Revised" License
+jaraco/jaraco.classes 3.3.1: https://github.com/jaraco/jaraco.classes : MIT License
+jedi 0.19.1: https://github.com/davidhalter/jedi : MIT License
+joblib 1.3.2: http://packages.python.org/joblib/ : BSD 3-clause "New" or "Revised" License
+jsocol's bleach 6.1.0: http://github.com/jsocol/bleach : Apache License 2.0
+jsonschema-specifications 2023.12.1: https://pypi.org/project/jsonschema-specifications/ : MIT License
+jupyter-console 6.6.3: https://jupyter.org : BSD 3-clause "New" or "Revised" License
+jupyter-events 0.9.1: https://pypi.org/project/jupyter-events/ : BSD 3-clause "New" or "Revised" License
+jupyter-lsp 2.2.4: https://github.com/krassowski/jupyterlab-lsp : BSD 3-clause "New" or "Revised" License
+jupyter-server-terminals 0.5.3: https://jupyter.org : BSD 3-clause "New" or "Revised" License
+jupyter-server/jupyter_server 2.13.0: https://github.com/jupyter/jupyter_server : BSD 3-clause "New" or "Revised" License
+jupyter 1.0.0: http://jupyter.org : BSD 3-clause "New" or "Revised" License
+jupyter_client 8.6.1: https://github.com/jupyter/jupyter_client : BSD 3-clause "New" or "Revised" License
+jupyter_core 5.7.2: http://jupyter-core.readthedocs.org/ : BSD 3-clause "New" or "Revised" License
+jupyterlab-pygments 0.3.0: http://jupyter.org : BSD 3-clause "New" or "Revised" License
+jupyterlab-server 2.25.4: http://jupyter.org : BSD 3-clause "New" or "Revised" License
+jupyterlab-widgets 3.0.10: https://github.com/ipython/ipywidgets : BSD 3-clause "New" or "Revised" License
+jupyterlab 4.1.5: https://jupyter.org : ((BSD Zero Clause License AND MIT License AND BSD 2-clause "Simplified" License AND ISC License AND Apache License 2.0 AND BSD 3-clause "New" or "Revised" License AND The Unlicense AND Eclipse Public License 2.0) AND ((MIT License AND SIL Open Font License 1.1 AND Creative Commons Attribution 4.0) AND (Apache License 2.0 OR Mozilla Public License 2.0)))
+keras-team/keras 2.10.0: http://keras.io/ : Apache License 2.0
+lazy-loader 0.3: https://pypi.org/project/lazy-loader/ : BSD 3-clause "New" or "Revised" License
+libclang 16.0.6: https://github.com/sighingnow/libclang : Apache License 2.0
+libsvm 3.23.0.4: https://github.com/ocampor/libsvm : Apache License 2.0
+lightgbm 4.3.0: https://github.com/Microsoft/LightGBM : MIT License
 linear-operator 0.5.2 : MIT License
-lxml 5.1.0 : BSD 3-clause "New" or "Revised" License
-Mako 1.3.2 : MIT License
-Markdown 3.1 : BSD 3-clause "New" or "Revised" License
-markdown-it-py 3.0.0 : MIT License
-MarkupSafe 2.1.5 : BSD 3-clause "New" or "Revised" License
-matplotlib 3.8.3 : Python Software Foundation License 2.0
-matplotlib-inline 0.1.6 : BSD 3-clause "New" or "Revised" License
-mdurl 0.1.2 : MIT License
-Mistune 3.0.2 : BSD 3-clause "New" or "Revised" License
-more-itertools 10.2.0 : MIT License
-mpmath 1.3.0 : BSD 3-clause "New" or "Revised" License
-nbclient 0.10.0 : BSD 3-clause "New" or "Revised" License
-nbconvert 7.16.2 : BSD 3-clause "New" or "Revised" License
-nbformat 5.9.2 : BSD 3-clause "New" or "Revised" License
-nest-asyncio 1.6.0 : BSD 3-clause "New" or "Revised" License
-NetworkX 3.2.1 : BSD 3-clause "New" or "Revised" License
-neural-structured-learning 1.4.0 : Apache License 2.0
-nh3 0.2.15 : MIT License
-notebook-shim 0.2.4 : BSD 3-clause "New" or "Revised" License
-NumPy 1.23.5 : BSD 3-clause "New" or "Revised" License
-oauthlib/oauthlib 3.2.2 : BSD 3-clause "New" or "Revised" License
-opencv-python 4.9.0.80 : Apache License 2.0
-opt-einsum 3.3.0 : MIT License
-optuna 3.5.0 : MIT License
-overrides 7.7.0 : Apache License 2.0
-Packaging 24.0 : Apache License 2.0
-pandas-python 2.2.1 : BSD 3-clause "New" or "Revised" License
-pandocfilters 1.5.1 : BSD 3-clause "New" or "Revised" License
-paramz 0.9.6 : BSD 3-clause "New" or "Revised" License
-parso 0.8.3 : MIT License
+liris/websocket-client 1.7.0: https://github.com/liris/websocket-client : Apache License 2.0
+lxml 5.1.0: http://codespeak.net/lxml/ : BSD 3-clause "New" or "Revised" License
+markdown-it-py 3.0.0: https://github.com/ExecutableBookProject/markdown-it-py : MIT License
+matplotlib-inline 0.1.6: https://github.com/martinRenou/matplotlib-inline : BSD 3-clause "New" or "Revised" License
+matplotlib 3.8.3: https://matplotlib.org/ : Python Software Foundation License 2.0
+mdurl 0.1.2: https://pypi.org/project/mdurl/ : MIT License
+more-itertools 10.2.0: https://github.com/erikrose/more-itertools : MIT License
+mpmath 1.3.0: http://code.google.com/p/mpmath/ : BSD 3-clause "New" or "Revised" License
+nbclient 0.10.0: https://jupyter.org : BSD 3-clause "New" or "Revised" License
+nbconvert 7.16.2: http://jupyter.org : BSD 3-clause "New" or "Revised" License
+nbformat 5.9.2: http://nbformat.readthedocs.org/ : BSD 3-clause "New" or "Revised" License
+nest-asyncio 1.6.0: https://github.com/erdewit/nest_asyncio : BSD 3-clause "New" or "Revised" License
+neural-structured-learning 1.4.0: https://github.com/tensorflow/neural-structured-learning : Apache License 2.0
+nh3 0.2.15: https://pypi.org/project/nh3 : MIT License
+notebook-shim 0.2.4: https://github.com/Zsailer/notebook_shim : BSD 3-clause "New" or "Revised" License
+nvidia-tao-tf2 4.0.0: https://pypi.org/project/nvidia-tao-tf2/ :
+opencv-python 4.9.0.80: https://pypi.org/project/opencv-python/ : Apache License 2.0
+opencv-python 4.9.0.80: https://github.com/skvark/opencv-python : Apache License 2.0
+opt-einsum 3.3.0: https://github.com/dgasmith/opt_einsum : MIT License
+optuna 3.5.0: https://optuna.org/ : MIT License
+overrides 7.7.0: https://github.com/mkorpela/overrides : Apache License 2.0
+pandas-python 2.2.1: https://pandas.pydata.org : BSD 3-clause "New" or "Revised" License
+pandocfilters 1.5.1: http://github.com/jgm/pandocfilters : BSD 3-clause "New" or "Revised" License
+paramz 0.9.6: https://github.com/mzwiessele/paramz : BSD 3-clause "New" or "Revised" License
+parso 0.8.3: https://github.com/davidhalter/parso : MIT License
 pillow 10.2.0 : Historic Permission Notice and Disclaimer
-platformdirs 4.2.0 : MIT License
-plotly 5.20.0 : MIT License
-prompt-toolkit/python-prompt-toolkit 3.0.43 : BSD 3-clause "New" or "Revised" License
-psf-requests 2.31.0 : Apache License 2.0
-psutil 5.9.8 : BSD 3-clause "New" or "Revised" License
-pure-eval 0.2.2 : MIT License
-py-filelock 3.13.1 : The Unlicense
-py-kiwisolver 1.4.5 : BSD 3-clause "New" or "Revised" License
+platformdirs 4.2.0: https://github.com/platformdirs/platformdirs : MIT License
+plotly 5.20.0: https://plot.ly/api/r : MIT License
+prompt-toolkit/python-prompt-toolkit 3.0.43: https://github.com/prompt-toolkit/python-prompt-toolkit : BSD 3-clause "New" or "Revised" License
+psf-requests 2.31.0: http://docs.python-requests.org : Apache License 2.0
+psutil 5.9.8: http://code.google.com/p/psutil/ : BSD 3-clause "New" or "Revised" License
+pure-eval 0.2.2: http://github.com/alexmojaki/pure_eval : MIT License
+py-filelock 3.13.1: https://github.com/benediktschmitt/py-filelock : The Unlicense
+py-kiwisolver 1.4.5: https://github.com/nucleic/kiwi : BSD 3-clause "New" or "Revised" License
 py3-google-auth 2.28.2 : Apache License 2.0
-pyasn1-modules 0.3.0 : BSD 3-clause "New" or "Revised" License
-pycocotools 2.0.7 : BSD 2-clause FreeBSD License
-pycparser 2.21 : BSD 3-clause "New" or "Revised" License
-Pygments - Python syntax highlighter 2.17.2 : BSD 2-clause "Simplified" License
-pyjson5 0.9.22 : (MIT License AND Apache License 2.0)
-pymoo 0.6.1.1 : Apache License 2.0
-Pyparsing 3.1.2 : MIT License
-pypi/setuptools 56.0.0 : MIT License
-python cffi 1.16.0 : MIT License
-Python Keyring Lib 24.3.1 : MIT License
-Python six 1.16.0 : MIT License
-Python tzdata 2024.1 : Apache License 2.0
-python-attrs 23.2.0 : MIT License
-Python-Babel 2.14.0 : BSD 3-clause "New" or "Revised" License
-python-certifi 2024.2.2 : ISC License
-python-colorlog 6.8.2 : MIT License
-python-dateutil 2.9.0.post0 : (Apache License 2.0 OR BSD 3-clause "New" or "Revised" License)
-python-decorator 5.1.1 : BSD 3-clause "New" or "Revised" License
-python-dill 0.3.8 : BSD 3-clause "New" or "Revised" License
-python-future 1.0.0 : MIT License
-python-hyper/rfc3986 2.0.0 : Apache License 2.0
-python-json-logger 2.0.7 : BSD 3-clause "New" or "Revised" License
-python-jsonschema 4.21.1 : MIT License
-python-pkginfo 1.10.0 : MIT License
-python-protobuf 3.19.6 : BSD 3-clause "New" or "Revised" License
-Python-RSA 4.9 : Apache License 2.0
+pyasn1-modules 0.3.0: http://pypi.python.org/pypi/pyasn1-modules : BSD 3-clause "New" or "Revised" License
+pyasn1 0.5.1: https://pypi.org/project/pyasn1/ : BSD 2-clause "Simplified" License
+pycocotools 2.0.7: https://github.com/cocodataset/cocoapi : BSD 2-clause FreeBSD License
+pycparser 2.21: https://github.com/eliben/pycparser : BSD 3-clause "New" or "Revised" License
+pyjson5 0.9.22: https://github.com/dpranke/pyjson5 : (MIT License AND Apache License 2.0)
+pymoo 0.6.1.1: https://github.com/julesy89/pymoo : Apache License 2.0
+pypi/setuptools 56.0.0: https://pypi.org/project/setuptools/ : MIT License
+python cffi 1.16.0: https://cffi.readthedocs.io/en/latest/index.html : MIT License
+python-attrs 23.2.0: https://attrs.readthedocs.org/ : MIT License
+python-certifi 2024.2.2: https://certifiio.readthedocs.io/en/latest/ : Mozilla Public License 2.0
+python-colorlog 6.8.2: http://pypi.python.org/pypi/colorlog : MIT License
+python-dateutil 2.9.0.post0: https://github.com/dateutil/dateutil : (Apache License 2.0 OR BSD 3-clause "New" or "Revised" License)
+python-decorator 5.1.1: http://pypi.python.org/pypi/decorator/ : BSD 3-clause "New" or "Revised" License
+python-dill 0.3.8: https://pypi.org/project/dill/ : BSD 3-clause "New" or "Revised" License
+python-future 1.0.0: https://github.com/edschofield/python-future : MIT License
+python-hyper/rfc3986 2.0.0: https://rfc3986.readthedocs.io/en/latest/ : Apache License 2.0
+python-json-logger 2.0.7: http://github.com/madzak/python-json-logger : BSD 3-clause "New" or "Revised" License
+python-jsonschema 4.21.1: https://python-jsonschema.readthedocs.org : MIT License
+python-pkginfo 1.10.0: http://pypi.python.org/pypi/pkginfo/ : MIT License
+python-protobuf 3.19.6: https://code.google.com/p/protobuf/ : BSD 3-clause "New" or "Revised" License
+python-twine 5.0.0: https://github.com/pypa/twine : Apache License 2.0
 python-typing-extensions 4.10.0 : Python Software Foundation License 2.3
-python-webencodings 0.5.1 : BSD 3-clause "New" or "Revised" License
-python-wheel 0.40.0 : MIT License
-python/importlib_metadata 7.0.2 : Apache License 2.0
-python3-charset-normalizer 3.3.2 : MIT License
-pytorch 2.2.1 : BSD 3-clause "New" or "Revised" License
-PyTZ - Python Time Zone Library 2024.1 : MIT License
-PyWavelets 1.5.0 : MIT License
-pywin32 306 : Python Software Foundation License 2.0
+python-webencodings 0.5.1: https://github.com/SimonSapin/python-webencodings : BSD 3-clause "New" or "Revised" License
+python-wheel 0.40.0: https://bitbucket.org/dholth/wheel : MIT License
+python/importlib_metadata 7.0.2: http://importlib-metadata.readthedocs.io/ : Apache License 2.0
+python3-charset-normalizer 3.3.2: https://github.com/ousret/charset_normalizer : MIT License
+pytorch 2.2.1: http://pytorch.org : BSD 3-clause "New" or "Revised" License
 pywin32-ctypes 0.2.2 : BSD 3-clause "New" or "Revised" License
-pywinpty 2.0.13 : MIT License
-PyYAML 6.0.1 : MIT License
-pyzmq 25.1.2 : BSD 3-clause "New" or "Revised" License
-qtconsole 5.5.1 : BSD 3-clause "New" or "Revised" License
-QtPy 2.4.1 : MIT License
-qudida 0.0.4 : MIT License
-readme-renderer 43.0 : Apache License 2.0
-referencing 0.33.0 : MIT License
+pywin32 306: https://github.com/mhammond/pywin32 : Python Software Foundation License 2.0
+pywinpty 2.0.13: https://github.com/spyder-ide/pywinpty : MIT License
+pyzmq 25.1.2: http://github.com/ellisonbg/pyzmq : BSD 3-clause "New" or "Revised" License
+qtconsole 5.5.1: http://jupyter.org : BSD 3-clause "New" or "Revised" License
+qudida 0.0.4: https://github.com/arsenyinfo/qudida : MIT License
+readme-renderer 43.0: https://github.com/pypa/readme_renderer : Apache License 2.0
+referencing 0.33.0: https://github.com/python-jsonschema/referencing : MIT License
 requests-oauthlib 1.4.0 : ISC License
-requests-toolbelt 1.0.0 : Apache License 2.0
-rfc3339-validator 0.1.4 : MIT License
-rfc3986-validator 0.1.1 : MIT License
-rich 13.7.1 : MIT License
-rpds-py 0.18.0 : MIT License
-scikit-image 0.22.0 : BSD 3-clause "New" or "Revised" License
-scikit-learn 1.4.1.post1 : BSD 3-clause "New" or "Revised" License
-SciPy: Scientific Library for Python 1.11.4 : BSD 3-clause "New" or "Revised" License
-seaborn 0.13.2 : BSD 3-clause "New" or "Revised" License
-send2trash 1.8.2 : BSD 3-clause "New" or "Revised" License
-sniffio 1.3.1 : Apache License 2.0
-soupsieve 2.5 : MIT License
-SQLAlchemy 2.0.28 : MIT License
-stack-data 0.6.3 : MIT License
-SymPy 1.12 : BSD 3-clause "New" or "Revised" License
-tenacity 8.2.3 : Apache License 2.0
-tensorboard 2.10.1 : Apache License 2.0
-tensorboard-plugin-wit 1.8.1 : Apache License 2.0
-TensorFlow 0.0.1 : MIT License
-TensorFlow 2.10.0 : Apache License 2.0
-tensorflow-addons 0.22.0 : Apache License 2.0
-tensorflow-estimator 2.10.0 : Apache License 2.0
-tensorflow-hub 0.12.0 : Apache License 2.0
-tensorflow-object-detection-api 0.1.1 : MIT License
-tensorflow-probability 0.17.0 : Apache License 2.0
-tensorflow/examples 0.2.5.dev202101052235 : Apache License 2.0
-tensorflow/examples 0.2.5.dev202101252242 : Apache License 2.0
-tensorflow/examples 0.2.5.dev202101262247 : Apache License 2.0
-tensorflow/examples 0.2.5.dev202101272243 : Apache License 2.0
-tensorflow/examples 0.2.5.dev202102032234 : Apache License 2.0
-tensorflow/examples 0.2.5.dev202102182239 : Apache License 2.0
-tensorflow/examples 0.2.6.dev202103072240 : Apache License 2.0
-tensorflow/examples 0.2.6.dev202104152245 : Apache License 2.0
-tensorflow/examples 0.3.1.dev202105102248 : Apache License 2.0
-tensorflow/examples 0.3.3.dev202106012252 : Apache License 2.0
-tensorflow/examples : Apache License 2.0
-tensorflow/io 0.31.0 : Apache License 2.0
-tensorflow/tensorboard 0.6.1 : Apache License 2.0
-termcolor-pypi 2.4.0 : MIT License
-terminado 0.18.1 : BSD 2-clause "Simplified" License
-threadpoolctl 3.3.0 : BSD 3-clause "New" or "Revised" License
-tifffile 2024.2.12 : BSD 3-clause "New" or "Revised" License
-tinycss2 1.2.1 : BSD 3-clause "New" or "Revised" License
-tomli 2.0.1 : MIT License
-tornado 6.4 : Apache License 2.0
-tqdm 4.66.2 : (MIT License OR Mozilla Public License 2.0)
-Traitlets 5.14.2 : BSD 3-clause "New" or "Revised" License
-twine 5.0.0 : Apache License 2.0
-typeguard 2.13.3 : MIT License
-uncertainty-toolbox 0.1.1 : MIT License
+requests-toolbelt 1.0.0: https://toolbelt.readthedocs.io : Apache License 2.0
+rfc3339-validator 0.1.4: https://github.com/naimetti/rfc3339_validator : MIT License
+rfc3986-validator 0.1.1: https://github.com/naimetti/rfc3986-validator : MIT License
+rich 13.7.1: https://github.com/willmcgugan/rich : MIT License
+rpds-py 0.18.0: https://github.com/crate-py/rpds : MIT License
+scikit-image 0.22.0: http://scikits-image.org : BSD 3-clause "New" or "Revised" License
+scikit-learn 1.4.1.post1: https://scikit-learn.org/ : BSD 3-clause "New" or "Revised" License
+seaborn 0.13.2: http://stanford.edu/~mwaskom/software/seaborn/ : BSD 3-clause "New" or "Revised" License
+send2trash 1.8.2: https://github.com/hsoft/send2trash : BSD 3-clause "New" or "Revised" License
+sniffio 1.3.1: https://github.com/python-trio/sniffio : Apache License 2.0
+soupsieve 2.5: https://github.com/facelessuser/soupsieve : MIT License
+stack-data 0.6.3: http://github.com/alexmojaki/stack_data : MIT License
+tenacity 8.2.3: https://github.com/jd/tenacity : Apache License 2.0
+tensorboard-plugin-wit 1.8.1: https://whatif-tool.dev : Apache License 2.0
+tensorboard 2.10.1: https://github.com/dmlc/tensorboard : Apache License 2.0
+tensorflow-addons 0.22.0: https://pypi.org/project/tensorflow-addons/ : Apache License 2.0
+tensorflow-estimator 2.10.0: https://www.tensorflow.org/ : Apache License 2.0
+tensorflow-hub 0.12.0: https://github.com/tensorflow/hub : Apache License 2.0
+tensorflow-object-detection-api 0.1.1: https://github.com/balazstothofficial/models : MIT License
+tensorflow-probability 0.17.0: http://github.com/tensorflow/probability : Apache License 2.0
+tensorflow/examples 0.3.0.dev202104232242: http://github.com/tensorflow/examples : Apache License 2.0
+tensorflow/examples 0.4.2.dev202207300507: http://github.com/tensorflow/examples : Apache License 2.0
+tensorflow/examples 0.4.3.dev202209100508: http://github.com/tensorflow/examples : Apache License 2.0
+tensorflow/io 0.31.0: https://github.com/tensorflow/io : Apache License 2.0
+tensorflow/tensorboard 0.6.1: https://github.com/tensorflow/tensorboard#readme : Apache License 2.0
+termcolor-pypi 2.4.0: http://pypi.python.org/pypi/termcolor : MIT License
+terminado 0.18.1: https://github.com/takluyver/terminado : BSD 2-clause "Simplified" License
+tf-efficientdet-lite2 0.10: https://github.com/hansalemaos/tf_efficientdet_lite2 : MIT License
+threadpoolctl 3.3.0: https://github.com/joblib/threadpoolctl : BSD 3-clause "New" or "Revised" License
+tifffile 2024.2.12: https://github.com/blink1073/tifffile : BSD 3-clause "New" or "Revised" License
+tinycss2 1.2.1: https://github.com/Kozea/tinycss2/ : BSD 3-clause "New" or "Revised" License
+tomli 2.0.1: https://github.com/hukkin/tomli : MIT License
+tornado 6.4: http://www.tornadoweb.org : Apache License 2.0
+tqdm 4.66.2: https://tqdm.github.io : (MIT License OR Mozilla Public License 2.0)
+typeguard 2.13.3: https://github.com/agronholm/typeguard : MIT License
+uncertainty-toolbox 0.1.1: https://pypi.org/project/uncertainty-toolbox/ : MIT License
 urllib3 2.2.1 : MIT License
-wcwidth 0.2.13 : MIT License
-websocket-client 1.7.0 : Apache License 2.0
-Werkzeug 3.0.1 : BSD 3-clause "New" or "Revised" License
-widgetsnbextension 4.0.10 : BSD 3-clause "New" or "Revised" License
-wrapt 1.16.0 : BSD 3-clause "New" or "Revised" License
-xflr6/graphviz 0.20.1 : MIT License
-xgboost 2.0.3 : Apache License 2.0
-zipp 3.18.1 : MIT License
+wcwidth 0.2.13: https://pypi.python.org/pypi/wcwidth : MIT License
+widgetsnbextension 4.0.10: http://ipython.org : BSD 3-clause "New" or "Revised" License
+wrapt 1.16.0: https://github.com/GrahamDumpleton/wrapt : BSD 3-clause "New" or "Revised" License
+xflr6/graphviz 0.20.1: https://github.com/xflr6/graphviz : MIT License
+xgboost 2.0.3: https://github.com/dmlc/xgboost : Apache License 2.0
+zipp 3.18.1: https://github.com/jaraco/zipp : MIT License
+
 Licenses:
 
 Apache License 2.0
-(absl-py 2.1.0, asttokens 2.4.1, catboost 1.2.3, client_python 0.20.0, Cython 3.0.9, dm-tree 0.1.8, FlatBuffers 24.3.7, google-auth-oauthlib 0.4.6, google-pasta 0.2.0, google/automl 1.0, grpcio 1.62.1, importlib-resources 6.3.0, jsocol's bleach 6.1.0, jupyterlab 4.1.5, keras-team/keras 2.10.0, libclang 16.0.6, libsvm 3.23.0.4, neural-structured-learning 1.4.0, opencv-python 4.9.0.80, overrides 7.7.0, Packaging 24.0, psf-requests 2.31.0, py3-google-auth 2.28.2, pyjson5 0.9.22, pymoo 0.6.1.1, Python tzdata 2024.1, python-dateutil 2.9.0.post0, python-hyper/rfc3986 2.0.0, Python-RSA 4.9, python/importlib_metadata 7.0.2, readme-renderer 43.0, requests-toolbelt 1.0.0, sniffio 1.3.1, tenacity 8.2.3, tensorboard 2.10.1, tensorboard-plugin-wit 1.8.1, TensorFlow 2.10.0, tensorflow-addons 0.22.0, tensorflow-estimator 2.10.0, tensorflow-hub 0.12.0, tensorflow-probability 0.17.0, tensorflow/examples 0.2.5.dev202101052235, tensorflow/examples 0.2.5.dev202101252242, tensorflow/examples 0.2.5.dev202101262247, tensorflow/examples 0.2.5.dev202101272243, tensorflow/examples 0.2.5.dev202102032234, tensorflow/examples 0.2.5.dev202102182239, tensorflow/examples 0.2.6.dev202103072240, tensorflow/examples 0.2.6.dev202104152245, tensorflow/examples 0.3.1.dev202105102248, tensorflow/examples 0.3.3.dev202106012252, tensorflow/examples, tensorflow/io 0.31.0, tensorflow/tensorboard 0.6.1, tornado 6.4, twine 5.0.0, websocket-client 1.7.0, xgboost 2.0.3)
+(absl-py 2.1.0, asttokens 2.4.1, catboost 1.2.3, client_python 0.20.0, Cython 3.0.9, dm-tree 0.1.8, FlatBuffers 24.3.7, google-auth-oauthlib 0.4.6, google-pasta 0.2.0, google/automl 1.0, google/automl 1.1, grpcio 1.62.1, importlib-resources 6.3.0, jsocol's bleach 6.1.0, jupyterlab 4.1.5, keras-team/keras 2.10.0, libclang 16.0.6, libsvm 3.23.0.4, liris/websocket-client 1.7.0, MXNet 0.11.0.rc0, neural-structured-learning 1.4.0, opencv-python 4.9.0.80, overrides 7.7.0, Packaging 24.0, psf-requests 2.31.0, py3-google-auth 2.28.2, pyjson5 0.9.22, pymoo 0.6.1.1, Python tzdata 2024.1, python-dateutil 2.9.0.post0, python-hyper/rfc3986 2.0.0, Python-RSA 4.9, python-twine 5.0.0, python/importlib_metadata 7.0.2, readme-renderer 43.0, requests-toolbelt 1.0.0, sniffio 1.3.1, tenacity 8.2.3, tensorboard 2.10.1, tensorboard-plugin-wit 1.8.1, TensorFlow 2.10.0, tensorflow-addons 0.22.0, tensorflow-estimator 2.10.0, tensorflow-hub 0.12.0, tensorflow-probability 0.17.0, tensorflow/examples 0.3.0.dev202104232242, tensorflow/examples 0.4.2.dev202207300507, tensorflow/examples 0.4.3.dev202209100508, tensorflow/io 0.31.0, tensorflow/tensorboard 0.6.1, tornado 6.4, xgboost 2.0.3)
 
 Apache License
 Version 2.0, January 2004
@@ -424,7 +421,7 @@ third-party archives.
 ---
 
 BSD 2-clause "Simplified" License
-(ASN.1 library for Python 0.5.1, ImageHash 4.3.1, imageio 2.34.0, jupyterlab 4.1.5, Pygments - Python syntax highlighter 2.17.2, terminado 0.18.1)
+(ImageHash 4.3.1, imageio 2.34.0, jupyterlab 4.1.5, pyasn1 0.5.1, Pygments - Python syntax highlighter 2.17.2, terminado 0.18.1)
 
 BSD Two Clause License
 ======================
@@ -477,7 +474,7 @@ either expressed or implied, of the FreeBSD Project.
 ---
 
 BSD 3-clause "New" or "Revised" License
-(astunparse 1.6.3, cloudpickle 3.0.0, cma 3.2.2, cocodataset/cocoapi 1.0.0, colorama 0.4.6, comm 0.2.2, contourpy 1.2.0, Cycler 0.12.1, fastjsonschema 2.19.1, fsspec 2024.2.0, gast 0.4.0, GPy 1.13.1, h5py 3.10.0, httpcore 1.0.4, httpx 0.27.0, idna 3.6, ijson 3.2.3, ipykernel 6.29.3, IPython 8.18.1, ipywidgets 8.1.2, Jinja 3.1.3, joblib 1.3.2, jupyter 1.0.0, jupyter-console 6.6.3, jupyter-events 0.9.1, jupyter-lsp 2.2.4, jupyter-server-terminals 0.5.3, jupyter-server/jupyter_server 2.13.0, jupyter_client 8.6.1, jupyter_core 5.7.2, jupyterlab 4.1.5, jupyterlab-pygments 0.3.0, jupyterlab-server 2.25.4, jupyterlab-widgets 3.0.10, lazy_loader 0.3, lxml 5.1.0, Markdown 3.1, MarkupSafe 2.1.5, matplotlib-inline 0.1.6, Mistune 3.0.2, mpmath 1.3.0, nbclient 0.10.0, nbconvert 7.16.2, nbformat 5.9.2, nest-asyncio 1.6.0, NetworkX 3.2.1, notebook-shim 0.2.4, NumPy 1.23.5, oauthlib/oauthlib 3.2.2, pandas-python 2.2.1, pandocfilters 1.5.1, paramz 0.9.6, prompt-toolkit/python-prompt-toolkit 3.0.43, psutil 5.9.8, py-kiwisolver 1.4.5, pyasn1-modules 0.3.0, pycparser 2.21, Python-Babel 2.14.0, python-dateutil 2.9.0.post0, python-decorator 5.1.1, python-dill 0.3.8, python-json-logger 2.0.7, python-protobuf 3.19.6, python-webencodings 0.5.1, pytorch 2.2.1, pywin32-ctypes 0.2.2, pyzmq 25.1.2, qtconsole 5.5.1, scikit-image 0.22.0, scikit-learn 1.4.1.post1, SciPy: Scientific Library for Python 1.11.4, seaborn 0.13.2, send2trash 1.8.2, SymPy 1.12, threadpoolctl 3.3.0, tifffile 2024.2.12, tinycss2 1.2.1, Traitlets 5.14.2, Werkzeug 3.0.1, widgetsnbextension 4.0.10, wrapt 1.16.0)
+(astunparse 1.6.3, cloudpickle 3.0.0, cma 3.2.2, colorama 0.4.6, comm 0.2.2, contourpy 1.2.0, Cycler 0.12.1, fastjsonschema 2.19.1, fsspec 2024.2.0, gast 0.4.0, GPy 1.13.1, h5py 3.10.0, httpcore 1.0.4, httpx 0.27.0, idan/oauthlib 3.2.2, idna 3.6, ijson 3.2.3, ipykernel 6.29.3, IPython 8.18.1, ipywidgets 8.1.2, Jinja 3.1.3, joblib 1.3.2, jupyter 1.0.0, jupyter-console 6.6.3, jupyter-events 0.9.1, jupyter-lsp 2.2.4, jupyter-server-terminals 0.5.3, jupyter-server/jupyter_server 2.13.0, jupyter_client 8.6.1, jupyter_core 5.7.2, jupyterlab 4.1.5, jupyterlab-pygments 0.3.0, jupyterlab-server 2.25.4, jupyterlab-widgets 3.0.10, lazy-loader 0.3, lxml 5.1.0, Markdown 3.1, MarkupSafe 2.1.5, matplotlib-inline 0.1.6, Mistune 3.0.2, mpmath 1.3.0, nbclient 0.10.0, nbconvert 7.16.2, nbformat 5.9.2, nest-asyncio 1.6.0, NetworkX 3.2.1, notebook-shim 0.2.4, NumPy 1.23.5, pandas-python 2.2.1, pandocfilters 1.5.1, paramz 0.9.6, prompt-toolkit/python-prompt-toolkit 3.0.43, psutil 5.9.8, py-kiwisolver 1.4.5, pyasn1-modules 0.3.0, pycparser 2.21, Python-Babel 2.14.0, python-dateutil 2.9.0.post0, python-decorator 5.1.1, python-dill 0.3.8, python-json-logger 2.0.7, python-protobuf 3.19.6, python-webencodings 0.5.1, pytorch 2.2.1, pywin32-ctypes 0.2.2, pyzmq 25.1.2, qtconsole 5.5.1, scikit-image 0.22.0, scikit-learn 1.4.1.post1, SciPy 1.11.4, seaborn 0.13.2, send2trash 1.8.2, SymPy 1.12, threadpoolctl 3.3.0, tifffile 2024.2.12, tinycss2 1.2.1, Traitlets 5.14.2, Werkzeug 3.0.1, widgetsnbextension 4.0.10, wrapt 1.16.0)
 
 Copyright (c) <year> <owner>.
 All rights reserved.
@@ -1157,7 +1154,7 @@ construct a non-OSD-compliant license that matches the pattern
 ---
 
 ISC License
-(jupyterlab 4.1.5, python-certifi 2024.2.2, requests-oauthlib 1.4.0)
+(jupyterlab 4.1.5, requests-oauthlib 1.4.0)
 
 ISC License (ISCL)
 ==================
@@ -1179,7 +1176,7 @@ THIS SOFTWARE.
 ---
 
 MIT License
-(about-time 4.2.1, albumentations 1.3.1, alembic 1.13.1, alive-progress 3.1.5, anyio 4.3.0, argon2-cffi 23.1.0, argon2-cffi-bindings 21.2.0, async-lru 2.0.4, autograd 1.6.2, BeautifulSoup4 4.12.3, brisque 0.0.15, cachetools 5.3.3, debugpy 1.8.1, Deprecated 1.2.14, exceptiongroup 1.2.0, executing 2.0.1, fonttools 4.5.0, google/jaxtyping 0.2.28, gpytorch 1.11, grapheme 0.6.0, greenlet 3.0.3, h11 0.14.0, HEBO 0.3.5, jaraco/jaraco.classes 3.3.1, jedi 0.19.1, jsonschema-specifications 2023.12.1, jupyterlab 4.1.5, Keras-Preprocessing 1.1.2, lightgbm 4.3.0, linear-operator 0.5.2, Mako 1.3.2, markdown-it-py 3.0.0, mdurl 0.1.2, more-itertools 10.2.0, nh3 0.2.15, opt-einsum 3.3.0, optuna 3.5.0, parso 0.8.3, platformdirs 4.2.0, plotly 5.20.0, pure-eval 0.2.2, pyjson5 0.9.22, Pyparsing 3.1.2, pypi/setuptools 56.0.0, python cffi 1.16.0, Python Keyring Lib 24.3.1, Python six 1.16.0, python-attrs 23.2.0, python-colorlog 6.8.2, python-future 1.0.0, python-jsonschema 4.21.1, python-pkginfo 1.10.0, python-wheel 0.40.0, python3-charset-normalizer 3.3.2, PyTZ - Python Time Zone Library 2024.1, PyWavelets 1.5.0, pywinpty 2.0.13, PyYAML 6.0.1, QtPy 2.4.1, qudida 0.0.4, referencing 0.33.0, rfc3339-validator 0.1.4, rfc3986-validator 0.1.1, rich 13.7.1, rpds-py 0.18.0, soupsieve 2.5, SQLAlchemy 2.0.28, stack-data 0.6.3, TensorFlow 0.0.1, tensorflow-object-detection-api 0.1.1, termcolor-pypi 2.4.0, tomli 2.0.1, tqdm 4.66.2, typeguard 2.13.3, uncertainty-toolbox 0.1.1, urllib3 2.2.1, wcwidth 0.2.13, xflr6/graphviz 0.20.1, zipp 3.18.1)
+(about-time 4.2.1, albumentations 1.3.1, alembic 1.13.1, alive-progress 3.1.5, anyio 4.3.0, argon2-cffi 23.1.0, argon2-cffi-bindings 21.2.0, async-lru 2.0.4, autograd 1.6.2, BeautifulSoup4 4.12.3, brisque 0.0.15, cachetools 5.3.3, debugpy 1.8.1, Deprecated 1.2.14, exceptiongroup 1.2.0, executing 2.0.1, fonttools 4.5.0, google/jaxtyping 0.2.28, gpytorch 1.11, grapheme 0.6.0, greenlet 3.0.3, h11 0.14.0, HEBO 0.3.5, jaraco/jaraco.classes 3.3.1, jedi 0.19.1, jsonschema-specifications 2023.12.1, jupyterlab 4.1.5, Keras-Preprocessing 1.1.2, lightgbm 4.3.0, linear-operator 0.5.2, Mako 1.3.2, markdown-it-py 3.0.0, mdurl 0.1.2, more-itertools 10.2.0, nh3 0.2.15, opt-einsum 3.3.0, optuna 3.5.0, parso 0.8.3, platformdirs 4.2.0, plotly 5.20.0, pure-eval 0.2.2, pyjson5 0.9.22, Pyparsing 3.1.2, pypi/setuptools 56.0.0, python cffi 1.16.0, Python Keyring Lib 24.3.1, Python six 1.16.0, python-attrs 23.2.0, python-colorlog 6.8.2, python-future 1.0.0, python-jsonschema 4.21.1, python-pkginfo 1.10.0, python-wheel 0.40.0, python3-charset-normalizer 3.3.2, PyTZ - Python Time Zone Library 2024.1, PyWavelets 1.5.0, pywinpty 2.0.13, PyYAML 6.0.1, QtPy 2.4.1, qudida 0.0.4, referencing 0.33.0, rfc3339-validator 0.1.4, rfc3986-validator 0.1.1, rich 13.7.1, rpds-py 0.18.0, soupsieve 2.5, SQLAlchemy 2.0.28, stack-data 0.6.3, TensorFlow 0.0.1, tensorflow-object-detection-api 0.1.1, termcolor-pypi 2.4.0, tf-efficientdet-lite2 0.10, tomli 2.0.1, tqdm 4.66.2, typeguard 2.13.3, uncertainty-toolbox 0.1.1, urllib3 2.2.1, wcwidth 0.2.13, xflr6/graphviz 0.20.1, zipp 3.18.1)
 
 The MIT License (MIT)
 ===============
@@ -1196,7 +1193,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 ---
 
 Mozilla Public License 2.0
-(jupyterlab 4.1.5, tqdm 4.66.2)
+(jupyterlab 4.1.5, python-certifi 2024.2.2, tqdm 4.66.2)
 
 Mozilla Public License
 Version 2.0
@@ -2002,4 +1999,3 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 For more information, please refer to http://unlicense.org/
 
 ---
-
