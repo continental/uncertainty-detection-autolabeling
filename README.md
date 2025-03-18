@@ -36,13 +36,16 @@ This repository provides an implementation of the following papers. It uses as a
 
 <img src="misc/paper2.jpg" width="800">
 
-[![Paper](http://img.shields.io/badge/Paper-arXiv.0000.00000-B3181B?logo=arXiv)]() Link incoming, Overcoming Common Challenges in Active Learning Pipelines for Object Detection through Similarity 
+
+<a href="https://openreview.net/pdf?id=vRYt8QLKqK">
+  <img src="https://www.mlcube.com/wp-content/uploads/2022/03/openreview_logo_512-copia-900x313.png" height="50">
+</a> Building Blocks for Robust and Effective Semi-Supervised Real-World Object Detection
+ 
+<img src="misc/paper4.jpg" width="800">
+
+[![Paper](http://img.shields.io/badge/Paper-arXiv.0000.00000-B3181B?logo=arXiv)]() Link incoming, Streamlining the Development of Active Learning Methods in Object Detectiony 
 
 <img src="misc/paper3.jpg" width="800">
-
-[![Paper](http://img.shields.io/badge/Paper-arXiv.0000.00000-B3181B?logo=arXiv)]() Link incoming, Addressing the Limitations of Semi-Supervised Object Detection through Enhanced Label Refinement and Utilization 
-
-<img src="misc/paper4.jpg" width="800">
 
 ## Prerequisites
 1. Clone this repository, then:
@@ -329,7 +332,15 @@ Citations
 }
 ```
 ```
-@inbook{}
+@article{
+   kassemsbeyti2024building,
+   title={Building Blocks for Robust and Effective Semi-Supervised Real-World Object Detection},
+   author={Moussa Kassem~Sbeyti and Nadja Klein and Azarm Nowzad and Fikret Sivrikaya and Sahin Albayrak},
+   journal={Transactions on Machine Learning Research},
+   issn={2835-8856},
+   year={2025},
+   url={https://openreview.net/forum?id=vRYt8QLKqK},
+}
 ```
 ```
 @inbook{}

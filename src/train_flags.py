@@ -358,20 +358,20 @@ def main(_):
         if "curriculum_learning" in FLAGS.train_file_pattern:
             logging.info("RCF activated")
             FLAGS.train_file_pattern = FLAGS.train_file_pattern.split("_curriculum")[0]
-            normal_tf_pseudo = FLAGS.train_file_pattern.split(".tfrecord")
-            normal_tf_pseudo = normal_tf_pseudo[0] + "_norm.tfrecord"
-            train_dataset_norm = get_dataset(
-                normal_tf_pseudo,
+            common_tf_pseudo = FLAGS.train_file_pattern.split(".tfrecord")
+            common_tf_pseudo = common_tf_pseudo[0] + "_common.tfrecord"
+            train_dataset_common = get_dataset(
+                common_tf_pseudo,
                 True,
                 config,
                 activate_pseudo_score=activate_im_score,
                 batch_size=FLAGS.batch_size - 1,
             )
 
-            hard_tf_pseudo = FLAGS.train_file_pattern.split(".tfrecord")
-            hard_tf_pseudo = hard_tf_pseudo[0] + "_hard.tfrecord"
-            train_dataset_hard = get_dataset(
-                hard_tf_pseudo,
+            rare_tf_pseudo = FLAGS.train_file_pattern.split(".tfrecord")
+            rare_tf_pseudo = rare_tf_pseudo[0] + "_rare.tfrecord"
+            train_dataset_rare = get_dataset(
+                rare_tf_pseudo,
                 True,
                 config,
                 activate_pseudo_score=activate_im_score,
@@ -380,15 +380,15 @@ def main(_):
             if activate_aug:
                 config_with_randaug = copy.deepcopy(config)
                 config_with_randaug.autoaugment_policy = "randaug"
-                train_dataset_hard_aug_V2 = get_dataset(
-                    hard_tf_pseudo,
+                train_dataset_rare_aug_V2 = get_dataset(
+                    rare_tf_pseudo,
                     True,
                     config_with_randaug,
                     activate_pseudo_score=activate_im_score,
                     batch_size=1,
                 )
-                train_dataset_hard_aug_V1 = get_dataset(
-                    hard_tf_pseudo,
+                train_dataset_rare_aug_V1 = get_dataset(
+                    rare_tf_pseudo,
                     True,
                     config_with_randaug,
                     activate_pseudo_score=activate_im_score,
@@ -396,18 +396,18 @@ def main(_):
                 )
                 train_dataset = tf.data.Dataset.zip(
                     (
-                        train_dataset_norm,
-                        train_dataset_hard,
-                        train_dataset_hard_aug_V1,
-                        train_dataset_hard_aug_V2,
+                        train_dataset_common,
+                        train_dataset_rare,
+                        train_dataset_rare_aug_V1,
+                        train_dataset_rare_aug_V2,
                     )
                 )
                 FLAGS.batch_size += 2
             else:
                 train_dataset = tf.data.Dataset.zip(
                     (
-                        train_dataset_norm,
-                        train_dataset_hard,
+                        train_dataset_common,
+                        train_dataset_rare,
                     )
                 )
         else:

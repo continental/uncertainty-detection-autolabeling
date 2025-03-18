@@ -1145,6 +1145,10 @@ class STAC:
                         + self.teacher_setup
                         + "/"
                     )
+                    
+                    jpg_count = sum([f.lower().endswith(".jpg") for _, _, files in os.walk(self.tf_path) for f in files])
+                    png_count = sum([f.lower().endswith(".png") for _, _, files in os.walk(self.tf_path) for f in files])
+                    self.num_labeled += jpg_count + png_count
                     if self.dataset == "KITTI":
                         self.train_tf_init = self.tf_path + "/_train.tfrecord"
 
