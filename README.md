@@ -43,7 +43,7 @@ This repository provides an implementation of the following papers. It uses as a
  
 <img src="misc/paper4.jpg" width="800">
 
-[![Paper](http://img.shields.io/badge/Paper-arXiv.0000.00000-B3181B?logo=arXiv)]() Link incoming, Streamlining the Development of Active Learning Methods in Object Detectiony 
+[![Paper](http://img.shields.io/badge/Paper-arXiv.0000.00000-B3181B?logo=arXiv)]() Link incoming, Streamlining the Development of Active Learning Methods in Object Detection 
 
 <img src="misc/paper3.jpg" width="800">
 
