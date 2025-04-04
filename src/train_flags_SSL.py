@@ -19,7 +19,7 @@
 # ==============================================================================
 
 """ Modified.
-The main training script."""
+SSL training script."""
 
 
 import copy

@@ -2,7 +2,8 @@
 # Licensed under the BSD-3-Clause License.
 # @author: Moussa Kassem Sbeyti
 # ==============================================================================
-""" Specific for paper: Overcoming Common Challenges in Active Learning Pipelines for Object Detection via Similarity """
+"""Active Learning Evaluation"""
+
 
 import json
 import os
