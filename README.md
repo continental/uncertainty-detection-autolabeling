@@ -43,7 +43,7 @@ This repository provides an implementation of the following papers. It uses as a
  
 <img src="misc/paper4.jpg" width="800">
 
-[![Paper](http://img.shields.io/badge/Paper-arXiv.0000.00000-B3181B?logo=arXiv)]() Link incoming, Streamlining the Development of Active Learning Methods in Object Detection 
+[![Paper](http://img.shields.io/badge/Paper-arXiv.2508.19906-B3181B?logo=arXiv)](https://arxiv.org/pdf/2508.19906) Streamlining the Development of Active Learning Methods in Real-World Object Detection 
 
 <img src="misc/paper3.jpg" width="800">
 
@@ -343,7 +343,13 @@ Citations
 }
 ```
 ```
-@inbook{}
+@misc{kassemsbeyti2025streamlining,
+      title={Streamlining the Development of Active Learning Methods in Real-World Object Detection}, 
+      author={Moussa Kassem~Sbeyti and Nadja Klein and Michelle Karg and Christian Wirth and Sahin Albayrak},
+      year={2025},
+      eprint={2508.19906},
+      archivePrefix={arXiv},
+}
 ```
 ## Additional Information
 This repository uses the Keras implementation of the [EfficientDet](https://github.com/google/automl/tree/master/efficientdet) detector exclusively for demonstration purposes.
